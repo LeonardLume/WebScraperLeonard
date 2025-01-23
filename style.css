@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #1e272e, #2f3640);
+  color: #dcdde1;
+  overflow-x: hidden;
+}
+
+header {
+  background: linear-gradient(135deg, #00a8ff, #0097e6);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #2c3e50;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#urlInput {
+  padding: 10px;
+  width: 70%;
+  font-size: 16px;
+  border: 1px solid #576574;
+  border-radius: 25px;
+  background: #1e272e;
+  color: #dcdde1;
+  outline: none;
+}
+
+#analyzeBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #00a8ff, #4cd137);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#errorMessage {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Soovi korral stiilige <progress> elementi */
+progress {
+  margin: 10px 0;
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Dekoratiivne ring (valikuline) */
+.decorative-circle {
+  position: absolute;
+  top: 50px;
+  right: -100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9c88ff, #fbc531);
+  opacity: 0.3;
+  z-index: 0;
+}
