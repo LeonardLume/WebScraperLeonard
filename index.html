@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Web Analysis Dashboard</title>
+    <!-- D3.js CDN -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Ühendame CSS-faili -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        🌐 Web Analysis Dashboard
+    </header>
+
+    <!-- Dekoratiivne element (valikuline) -->
+    <div class="decorative-circle"></div>
+
+    <div class="container">
+        <div class="controls">
+            <input type="text" id="urlInput" placeholder="Enter e-commerce URL">
+            <button id="analyzeBtn">Analyze</button>
+        </div>
+
+        <!-- Lisa soovi korral progressBar -->
+        <progress id="progressBar" max="100" value="0" style="width: 100%; display: none;"></progress>
+        <div id="errorMessage" class="error-message"></div>
+
+        <section id="categories">
+            <h2>📊 Popular Categories</h2>
+            <div id="categoriesChart"></div>
+        </section>
+
+        <section id="products">
+            <h2>⭐ Products and Ratings</h2>
+            <div id="productsChart"></div>
+        </section>
+
+        <section id="discounts">
+            <h2>💸 Discounted Products</h2>
+            <div id="discountsChart"></div>
+        </section>
+    </div>
+
+    <footer>
+        Made with ❤️ and D3.js
+    </footer>
+
+    <!-- Ühendame oma JavaScripti -->
+    <script src="script.js"></script>
+</body>
+</html>
